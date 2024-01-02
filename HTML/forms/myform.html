@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced form</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+            html {
+              font-family: "jost", sans-serif;
+              background-color: #efefef;
+            }
+            h1 {
+              font-weight: bold;
+            }
+          </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Fill Up your Contact details</legend>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name"  placeholder="Enter your name">
+                </div>
+                <br>
+                <div>
+                    <label for="birthdate">Birthdate: </label>
+                    <input type="date" id="birthdate" value="birthdate">
+                </div>
+                <br>
+                <div>
+                    <label for="pincode">Pincode: </label>
+                    <input type="number" id="pincode" value="pincode" placeholder="000000">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="userexample@mail.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender: </label>
+                    <input type="radio" name="gender" id="gender" value="male">male
+                    <input type="radio" name="gender" id="gender" value="female">female
+                </div>
+                <br>
+                <div>
+                    <label for="bank">Bank Name: </label>
+                    <select>
+                        <option value="State Bank of India">State Bank of India</option>
+                        <option value="Bank of Baroda">Bank of Baroda</option>
+                        <option value="HDFC Bank">HDFC Bank</option>
+                        <option value="ICICI Bank">ICICI Bank</option>
+                        <option value="Punjab National Bank">Punjab National Bank</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="card">Card Number: </label>
+                    <input type="number" id="card" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="expiry">Expiry Date: </label>
+                    <input type="month" id="expiry">
+                </div>
+                <br>
+                <div>
+                    <label for="website">Your Website: </label>
+                    <input type="url" id="website">
+                </div>
+                <br>
+                <div>
+                    <label for="ranges">Liked Us? </label>
+                    <input type="range" min="0" max="100" value="50" id="ranges">
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
