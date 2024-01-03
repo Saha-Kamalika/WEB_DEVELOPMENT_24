@@ -1,0 +1,23 @@
+/*  #ff3368; #ecfdff; */
+h1{
+    color: red;
+    font-weight: bold;
+}
+h1:hover{
+    background-color: rgb(119, 185, 240);
+    color: blue;
+}
+p{
+    color:blueviolet;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+#btn{
+    background-color: brown;
+    color: antiquewhite;
+}
+#btn:hover{
+    background-color: black;
+}
