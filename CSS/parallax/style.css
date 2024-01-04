@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost";
+    scroll-behavior: smooth;
+  }
+nav{ 
+    position: fixed;
+    background-color: rgb(170, 201, 250);
+    box-shadow: #0a0808;
+    width: 100%;
+    height: 30px;
+  }
+ul{
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+p {
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 4px 4px 5px #000;
+  }
+li{
+
+    text-align: right;
+    color: rgb(77, 37, 37);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+}
+li:hover{
+    color: rgb(0, 0, 0);
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(./images/victoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(./images/museum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(./images/birla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(./images/cathedral.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
