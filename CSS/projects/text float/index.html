@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Float</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Bungee Spice', sans-serif;
+            ;
+        }
+        body{
+            height: 100vh;
+            background-color: #191825;
+            display: grid;
+            place-items: center;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 48px;
+            text-shadow: -3px 10px 10px rgba(249, 141, 141, 0.2);
+            animation: floating 2s linear infinite alternate;
+        }
+        @keyframes floating{
+            0%{
+                rotate: 15deg;
+            }
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: -15deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Srjit <br>
+        Bera
+    </h1>
+</body>
+</html>
