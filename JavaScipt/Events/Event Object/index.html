@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #2d204e;
+            gap: 20px;
+        }
+        .btn{
+            width: 20vw;
+            height: 10vh;
+            border-radius: 2px;
+            background-color: rgb(236, 210, 60);
+            padding: 20px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+        h1,a{
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 50px;"> Event Object in JavaScript</h1>
+        <div class="btn">
+            <a href="#" id="fifthway">Event Object</a>
+        </div>
+    </div>
+    <script>
+        const checkEvent = () => {
+            alert('Testifying Event Object');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        }
+        const fifthway = document.querySelector('#fifthway');
+        fifthway.addEventListener('click', checkEvent);  //checkEvent need to be defined before this line
+    </script>
+</body>
+</html>
