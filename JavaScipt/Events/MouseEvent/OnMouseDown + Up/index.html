@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #2d204e;
+            gap: 20px;
+        }
+        p{
+            color: white;
+            font-weight: 700;
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+    <p id="text" onmousedown="mousedown()" onmouseup="mouseup()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, veniam repellendus minima animi cum cumque quae ut est incidunt, rem obcaecati modi laborum non suscipit tenetur ipsum natus et molestiae.
+    Ut dolor doloremque consequuntur repudiandae blanditiis nihil alias tempore eos beatae sunt, reprehenderit explicabo minus quod, fugiat aliquid. Cum minima molestiae nostrum, asperiores tempora deserunt illo doloremque quidem dolorum necessitatibus.
+    Nostrum consectetur ex id quos quisquam architecto nulla provident cumque tenetur quasi, laborum fuga maxime vitae officia iste omnis, cupiditate porro soluta a? Voluptatem fugit ea quos, odio aut atque?
+    Officia architecto dolor magni repellat perspiciatis, quae eum animi reiciendis ea commodi aut amet, aperiam aspernatur illo quasi nemo? Officiis laboriosam harum distinctio earum voluptate saepe dicta nostrum vitae tempora.
+    Tempore temporibus, molestias quo earum in voluptatibus perferendis dolorum hic quos deleniti sed, quasi vero dolorem sunt culpa! Fugit quis veritatis alias enim labore similique aliquam doloremque magnam possimus autem.
+    </p>
+    <script>
+        function mousedown(){
+            document.getElementById('text').style.color='yellow';
+        }
+        function mouseup(){
+            document.getElementById('text').style.color='pink';
+        }
+
+    </script>
+</body>
+</html>
