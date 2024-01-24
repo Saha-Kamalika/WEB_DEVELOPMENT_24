@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #2d204e;
+            gap: 20px;
+        }
+        #box{
+            width: 20vw;
+            aspect-ratio: 1;
+            background-color: rgba(222, 203, 27, 0.703);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()"></div>
+    <script>
+        const myId = document.getElementById('box');
+
+        myId.addEventListener('mouseenter',()=>{
+            console.log('Mouse Enter Event');
+            myId.style.backgroundColor = 'red';
+        });
+
+        myId.addEventListener('mouseleave',()=>{
+            myId.style.backgroundColor = 'pink';
+            console.log('Mouse Leave Event');
+            });
+
+    </script>
+</body>
+</html>
