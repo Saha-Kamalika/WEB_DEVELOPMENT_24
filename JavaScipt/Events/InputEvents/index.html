@@ -1,0 +1,77 @@
+<!--
+    // Section 5️⃣ InputEvents in JavaScript 
+// The onchange event occurs when the value of an element has been changed.
+
+// For radiobuttons and checkboxes, the onchange event occurs when the 
+// checked state has been changed.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #29215a;
+            gap: 20px;
+        }
+        label{
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        #show{
+            font-size: 18px;
+            font-weight: 700;
+            color: #796dd3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <label for="">Your Name 👉 </label>
+            <input type="text" value="" id="username">
+            <br>
+            <label>Choose flavour:
+                <select name="iceCream" id="iceCream" onchange="selectChange()">
+                    <option value="none">Select One</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="butterscotch">Butterscotch</option>
+                </select> 
+            </label>
+            <br><br>
+            <div id="show"></div>
+        </div>
+    </div>
+    <script>
+        /*const selectChange = () => {
+            const name = document.getElementById('username').value;
+            const icecream = document.getElementById('iceCream').value;
+            
+            const result = document.getElementById('show').innerHTML = `Customer ${name} selected ${icecream} icecream flavour`
+        };*/
+        const myFunc = () =>{
+            const name = document.getElementById('username').value;
+            const icecream = document.getElementById('iceCream').value;
+            
+            const result = document.getElementById('show').innerHTML = `Customer ${name} selected ${icecream} icecream flavour`
+        }
+        const myId = document.getElementById('iceCream');
+        myId.addEventListener('change', myFunc);
+    </script>
+</body>
+</html>
