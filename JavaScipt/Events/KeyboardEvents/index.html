@@ -1,0 +1,70 @@
+<!--// section ️4️⃣ KeyboardEvent  in JavaScript
+// Events that occur when user presses a key on the keyboard, 
+// belongs to the KeyboardEvent Object.
+// https://www.w3schools.com/jsref/obj_keyboardevent.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #29215a;
+            gap: 10px;
+        }
+        p{
+            text-align: center;
+            color: aliceblue;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        input{
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            width: 50vw;
+            height: 10vh;
+        }
+        #keys{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>A function is triggered when the user is pressing a key in the input field</p>
+            <br>
+            <input type="text" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()">
+            <br><br>
+            <p id="keys"></p>
+        </div>
+    </div>
+    <script>
+        const keyPress = () =>{
+            document.getElementById('keys').innerHTML = `You pressed ${event.key} and it's code is ${event.code}`
+        }
+
+        const keyDown = () =>{
+            document.getElementById('keys').innerHTML = `Key is down`
+        }
+
+        const keyUp = () =>{
+            document.getElementById('keys').innerHTML = `Key is up`
+        }
+    </script>
+</body>
+</html>
