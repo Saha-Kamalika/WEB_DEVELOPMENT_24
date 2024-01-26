@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-div{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #29215a;
+            gap: 20px;
+
+            #btn{
+                margin-left: 100px;
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            color: aliceblue;
+            font-weight: 700;
+        }
+        #btn, #btn1{
+            margin: 10px;
+            padding: 20px;
+            background-color: #efc027;
+            font-weight: 700;
+            font-size: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>Stop me when I reach 5 😉</p>
+            <br>
+            <br><br>
+            <button id="btn">Start</button>
+            <button id="btn1">Stop</button>
+        </div>
+    </div>
+    <script>
+        const myId = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+        const btn1 = document.querySelector('#btn1');
+        let timeRef
+        let num = 0
+        const show = () =>{
+            myId.innerHTML = 'Loading....';
+            timeRef = setInterval(()=>{
+                myId.innerHTML = `${num}`;
+                num++;
+            }, 1000);
+        }
+        btn.addEventListener('click', show);
+        btn1.addEventListener('click', ()=>{
+            clearInterval(timeRef)
+        })
+    </script>
+</body>
+</html>
