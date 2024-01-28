@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a3faff;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.container{
+    border: 2px solid black;
+    padding: 10vh;
+    background: linear-gradient(to right top,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6));
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+h3{
+    font-size: 25px;
+    color: rgb(24, 24, 24);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.joke{
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(31, 15, 2);
+    font-weight: 1000;
+}
+button{
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 10vw;
+    height: auto;
+    font-size: 20px;
+    background-color: #7fcef0;
+    color: rgb(7, 7, 43);
+    font-weight: 600;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    scale: 1.2;
+}
