@@ -1,4 +1,4 @@
-# To congifure github
+# To configure git
 <hr>
 <ul>
     <li>git config --global user.name "Name"</li>
