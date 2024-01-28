@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-div{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #c65e5e;
+        }
+        .parentDiv{
+            margin: 0 auto;
+            width: 200px;
+            aspect-ratio: 1;
+            background-color: #1aa3b5;
+            border: 10px solid rgb(18, 49, 114);
+            display: grid;
+            place-items: center;
+        }
+        .childDiv{
+            margin: 0 auto;
+            width: 100px;
+            aspect-ratio: 1;
+            background-color: #43b51a;
+            border: 10px solid rgb(4, 50, 24);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+    <div class="parentDiv" id="parent">
+        <div class="childDiv" id="child"></div>
+    </div>
+    </div>
+    <script>
+        const childId= document.getElementById('child');
+        const parentId= document.getElementById('parent');
+
+        const childFunc = () => {
+            alert('Child Div called');
+            //event.stopPropagation(); //to stop event bubbling by default
+        }
+        const parentFunc = () => alert('Parent Div called');
+        //childId.addEventListener('click', childFunc);
+        //parentId.addEventListener('click', parentFunc);
+
+        childId.addEventListener('click', childFunc, true);   //event capturing
+        parentId.addEventListener('click', parentFunc, true);
+    </script>
+</body>
+</html>
