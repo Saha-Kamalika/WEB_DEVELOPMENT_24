@@ -1,4 +1,4 @@
-# To congifure github
+# To configure git
 <hr>
 <ul>
     <li>git config --global user.name "Name"</li>
@@ -18,6 +18,8 @@
     <li>git checkout [branchname]</li>
     <li>git checkout -b [newbranchname]</li>
     <li>git branch -d [branchname]</li>
+    <li>git merge [branchname]</li>
+    <li>git pull</li>
     <li>git reset HEAD~1</li>
 </ul>
 
