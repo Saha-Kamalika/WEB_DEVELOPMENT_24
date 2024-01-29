@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+form{
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    background-color: brown;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: beige;
+    font-weight: 700;
+}
+#temp{
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#temp_diff{
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    vertical-align: top;
+}
