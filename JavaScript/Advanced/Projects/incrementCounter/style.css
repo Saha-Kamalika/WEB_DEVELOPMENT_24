@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #250a64;
+}
+.main-container{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter-container{
+    text-align: center;
+}
+.counter{
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    color: rgb(255, 187, 0);
+}
+span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: aliceblue;
+}
+.fas{
+    color: white;
+}
