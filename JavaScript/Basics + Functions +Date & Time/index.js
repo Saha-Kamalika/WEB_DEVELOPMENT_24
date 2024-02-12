@@ -11,6 +11,7 @@
 // String...string
 // BigInt...bigint
 // Symbol...symbol
+// null
 
 //typeof operator
 //console.log(typeof(myName));
@@ -74,6 +75,16 @@
 //     console.log("we won");
 // }
 // console.log(score);
+
+
+
+// let nums = prompt("Enter a number: ");
+// if(nums%5 === 0){
+//     console.log(nums, " is a multiple of 5");
+// }
+// else{
+//     console.log(nums, " is not a multiple of 5");
+// }
 
 //functions  -> reusable block of code
 // function sum(){
