@@ -12,12 +12,12 @@
                     //location etc
 
 ////Navigation in DOM
-document.documentElement //returns the root element of the document
-document.body.childNodes //includes text(tab enter and whitespaces)
-document.children //does not include txt
-document.childNodes.length 
-document.body.hasChildNodes() 
-document.body.firstElementChild.firstElementChild
+// document.documentElement //returns the root element of the document
+// document.body.childNodes //includes text(tab enter and whitespaces)
+// document.children //does not include txt
+// document.childNodes.length 
+// document.body.hasChildNodes() 
+// document.body.firstElementChild.firstElementChild
 // const childOne = document.body.firstElementChild.firstElementChild
 // undefined
 // childOne.style.color = "white"
