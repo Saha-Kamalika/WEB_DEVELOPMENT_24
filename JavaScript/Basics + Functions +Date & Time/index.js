@@ -86,6 +86,13 @@
 //     console.log(nums, " is not a multiple of 5");
 // }
 
+
+// for(let i=1;i<=5;i++){
+//     var pattern ="";
+//     for(let j=1;j<=i;j++){
+//         pattern+=" *";
+//     }console.log(pattern);
+// }
 //functions  -> reusable block of code
 // function sum(){
 //     var a=10, b=20;
@@ -112,6 +119,39 @@
 // //console.log(res(20, 20));
 // res(20, 60);
 
+
+//IIFE (Immediately Invoked Function Expression)
+
+(function(a,b){
+    console.log(a+b);
+    return a+b;
+}(5,6));
+
+const calculator = (num1,num2,operator) =>{
+    let result;
+    switch(operator){
+        case "+": 
+            result= num1+num2;
+            return result;
+        case "-":
+            result= num1-num2;
+            return result;
+        case "*":
+            result= num1*num2;
+            return result;
+        case "/":
+            if(num2==0) return 'cannot be divisible by 0';
+            result= num1/num2;
+            return result;
+        default: return 'no matched operator found';
+    }
+}
+console.log(calculator(5,10,"+"));
+console.log(calculator(5,10,"-"));
+console.log(calculator(5,10,"*"));
+console.log(calculator(10,0,"/"));
+console.log(calculator(10,5,"/"));
+// console.log(`The sum is ${result}`);
 
 
 
@@ -172,8 +212,8 @@
 // console.log(sum());
 
 //arrays 
-var names = new Array //not mandatory
-var names =['kamalika', 'srijit', 'bishtu', 'rumi', true, 22, false, undefined]; //not strict, can store any datatypes
+// var names = new Array //not mandatory
+// var names =['kamalika', 'srijit', 'bishtu', 'rumi', true, 22, false, undefined]; //not strict, can store any datatypes
  //     lower index/boundary                                  upper index/boundary
 
 
@@ -204,7 +244,7 @@ var names =['kamalika', 'srijit', 'bishtu', 'rumi', true, 22, false, undefined];
 //     console.log(`${element} index: ${index}`);
 // });
 
-var names =['kamalika', 'srijit', 'bishtu', 'rumi', 'srijit'];
+// var names =['kamalika', 'srijit', 'bishtu', 'rumi', 'srijit'];
 // //searching and filter in array
 // //indexOf()
 // console.log(names.indexOf('bishtu', 3));
@@ -217,7 +257,7 @@ var names =['kamalika', 'srijit', 'bishtu', 'rumi', 'srijit'];
 //find()  ->returns only 1 element..returns undefined if no such element is found
 //arr.find(callback(element, index, array))
 
-const prices = [100,200,300,400,500,600];
+// const prices = [100,200,300,400,500,600];
 // const findEle = prices.find((currValue) =>{
 //     return currValue < 400;
 // })
@@ -236,7 +276,7 @@ const prices = [100,200,300,400,500,600];
 
 //insert, add, delete replace()
 //CRUD
-const animals = ['pigs', 'cows', 'sheep'];
+// const animals = ['pigs', 'cows', 'sheep'];
 // push() returns new length of array
 // console.log(animals.push('chicken'));
 
@@ -432,9 +472,9 @@ const animals = ['pigs', 'cows', 'sheep'];
 // </html>
 
 ///Javascript math objects
-console.log(Math.PI);
-let num= 69.69999;
-console.log(Math.round(num));
+// console.log(Math.PI);
+// let num= 69.69999;
+// console.log(Math.round(num));
 //Math.pow()
 //Math.sqrt()
 //Math.abs()-> negative to positive
