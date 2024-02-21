@@ -11,3 +11,24 @@ const func1 = () =>{
 }
 func1();
 
+//callback hell or pyramid of doom
+
+
+getData = (dataId, getNextData) =>{
+    setTimeout(()=>{
+        console.log("data", dataId);
+        if(getNextData){
+            getNextData();
+        }
+    }, 2000);
+}
+getData(1, ()=>{
+    console.log("Getting data2");
+    getData(2, ()=>{
+        console.log("Getting data3");
+        getData(3, ()=>{
+            console.log("Getting data4");
+            getData(4)
+        })
+    })
+})
