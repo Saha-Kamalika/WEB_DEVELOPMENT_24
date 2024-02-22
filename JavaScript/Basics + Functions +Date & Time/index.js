@@ -291,7 +291,6 @@ arr.sort((a,b)=>{
 })
 console.log(arr);
 
-
 //insert, add, delete replace()
 //CRUD
 // const animals = ['pigs', 'cows', 'sheep'];
