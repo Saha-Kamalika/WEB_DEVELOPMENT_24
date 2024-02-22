@@ -271,8 +271,26 @@ console.log(calculator(10,5,"/"));
 // const newArr = prices.filter((ele, index)=> ele<400);
 // console.log(newArr);
 
+
+
+
+
+const res = arr.filter((curr, index)=>{
+    return arr.indexOf(curr) === index;
+})
+console.log(res);
+
+console.log([...new Set(arr)]);
+
 //sort()   ..default ->ascending order //coverts to string then sorts
 // console.log(names.sort());
+let arr = [1,2,3,1,4,2,4,4,5,7,6,8,9];
+arr.sort((a,b)=>{
+    if(a>b) return 1;
+    if(b>a) return -1;
+})
+console.log(arr);
+
 
 //insert, add, delete replace()
 //CRUD
