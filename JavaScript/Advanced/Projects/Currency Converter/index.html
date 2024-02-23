@@ -13,7 +13,7 @@
         <form>
             <div class="amount">
                 <p>Enter amount: </p>
-                <input type="text" value="100">
+                <input type="text" value="1">
             </div>
             <div class="dropdown">
                 <div class="from">
@@ -21,10 +21,6 @@
                     <div class="select-container">
                         <img src="https://flagsapi.com/US/flat/64.png">
                         <select name="from" id="">
-                            <option value="INR">INR</option>
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
                         </select>
                     </div>
                 </div>
@@ -34,18 +30,16 @@
                     <div class="select-container">
                         <img src="https://flagsapi.com/IN/flat/64.png">
                         <select name="to" id="">
-                            <option value="INR" selected>INR</option>
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
+                
                         </select>
                     </div>
                 </div>
             </div>
             <div class="msg">1USD = 80INR</div>
-            <button>Get Exchange Rate</button>
+            <button id="btn">Get Exchange Rate</button>
         </form>
     </div>
+    <script src="codes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
