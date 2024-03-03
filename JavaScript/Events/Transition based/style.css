@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rectangle{
+    margin-top: 50px;
+    width: 35rem;
+    height: 35rem;
+    background-color: #000;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-bottom: 3.2rem;
+    transition: all .6s linear;
+    -webkit-transition: all .6s linear;
+    -moz-transition: all .6s linear;
+    -ms-transition: all .6s linear;
+    -o-transition: all .6s linear;
+    box-shadow: rgba(239,247,87,0.2) 0px 8px 24px;
+}
+.addTransition1{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.addTransition2{
+    translate: -30rem 0;
+    background-color: #f5ee62;
+}
+.addTransition3{
+    translate: 30rem 0;
+    background-color: #f5ee62;
+}
+.addTransition4{
+    translate: 0;
+    background-color: #000;
+    box-shadow: rgba(239,247,87,0.2) 0px 8px 24px;
+}
+#btn{
+    border: none;
+    padding: 1rem;
+    font-size: 25px;
+    background-color: rgba(239,247,87,0.2);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
