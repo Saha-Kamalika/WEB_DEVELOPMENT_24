@@ -10,7 +10,8 @@ body{
     margin-top: 70px;
 }
 form{
-    width: 50rem;
+    width: 70vw;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

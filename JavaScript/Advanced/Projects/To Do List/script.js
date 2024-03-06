@@ -5,6 +5,9 @@ const getTodoList = () =>{
     return JSON.parse(localStorage.getItem("todo"));
 }
 
+const addTodoListLocal = (localTodo)=>{
+    return localStorage.setItem("todo",JSON.stringify(localTodo));
+}
 let localTodo = getTodoList() || [];
 
 const addDynElem = (curr) =>{
@@ -17,13 +20,13 @@ const addTodoList = (e) =>{
     e.preventDefault();
     const todoLisVal = inputField.value.trim();
     inputField.value="";
-    if(!localTodo.includes(todoLisVal)){
+    if(todoLisVal!="" && !localTodo.includes(todoLisVal)){
     localTodo.push(todoLisVal);
     localTodo = [...new Set(localTodo)];
     console.log(localTodo);
     localStorage.setItem("todo",JSON.stringify(localTodo));
 
-    addTodoList(todoLisVal);
+    addDynElem(todoLisVal);
     }
 };
 const showTodo = () =>{
@@ -33,6 +36,23 @@ const showTodo = () =>{
     });
 }
 showTodo();
+const removeTodo = (e) =>{
+    const todoremove = e.target;
+    let near = todoremove.previousElementSibling.innerText;
+    let parentEle = todoremove.parentElement;
+    localTodo = localTodo.filter((curr)=>{
+        return curr!=near.toLowerCase();
+    });
+
+    addTodoListLocal(localTodo);
+    parentEle.remove();
+}
 document.querySelector("#addbtn").addEventListener('click',(e)=>{
     addTodoList(e);
+})
+mainTodo.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(e.target.classList.contains("deleteBtn")){
+        removeTodo(e);
+    }
 })

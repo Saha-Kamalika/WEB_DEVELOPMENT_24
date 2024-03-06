@@ -473,6 +473,25 @@ console.log(isPangram(s));
 // // console.log(date.getDate());
 // // console.log(date.getDay());
 
+//modifying a date
+
+const updateDate = (currDate, change) =>{
+    let newDate = currDate.setDate(currDate.getDate()+change);
+    return new Date(newDate);
+}
+const date = new Date("2024-09-01");
+const newDate = updateDate(date, 7);
+console.log(newDate.toLocaleDateString());
+
+//find difference between 2 dates
+const differenceDate = (d1,d2) =>{
+    let oneDay = 84640000;
+    let diff = Math.abs(d2-d1);
+    return Math.round(diff/oneDay);
+}
+const date1 = new Date("2024-02-19");
+const date2 = new Date("2024-03-01");
+console.log(differenceDate(date1,date2));
 // //setting custom dates
 // // var myDate = new Date();
 // // console.log(myDate.setFullYear(2024));
