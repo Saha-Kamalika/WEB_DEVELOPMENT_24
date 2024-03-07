@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #26153f;
+}
+#countDown{
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(169, 78, 137);
+}
+section{
+    margin-top: 8rem;
+    width: 20vw;
+    height: 60vh;
+    background: #130b1f;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+button{
+    margin-right: 0.2rem;
+    margin-bottom: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    &:hover{
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+}
+.resetValue{
+    color: rgb(169, 78, 137);
+    text-align: center;
+    font-size: 1rem;
+}
