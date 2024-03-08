@@ -7,6 +7,17 @@
 //         this.salary = salary;
 //     }
 // };
+
+//dynamic keys
+let idType = "studentId";
+const myObj = {
+    [idType] : "155",
+    firstName: "Kamalika",
+    greet : function(){
+        console.log(`Say hello to ${myObj.firstName} with ${idType} ${myObj[idType]}`);
+    }
+};
+myObj.greet();
 // const programmer = {
 //     firstName: "Kamalika",
 //     calculateTax(){
