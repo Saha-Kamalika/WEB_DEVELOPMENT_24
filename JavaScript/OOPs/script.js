@@ -18,6 +18,41 @@ const myObj = {
     }
 };
 myObj.greet();
+//Pass by reference 
+let obj1 = {
+    name: "Kamalika",
+    roll: 155
+}
+let obj2 = {
+    name: "Srijit",
+    roll: 156
+}
+let isEqual = obj1==obj2 ? true:false;
+console.log(isEqual);
+let obj3=obj1;
+isEqual = obj3==obj1 ? true:false;
+console.log(isEqual);
+
+//object methods
+let newObj = {
+    id: 155,
+    name: "Rumi",
+    pin: 101,
+    isValid: true
+};
+console.log(Object.keys(newObj));
+console.log(Object.values(newObj));
+console.log(Object.entries(newObj));
+const oldObj = {   //source
+    a: 1,
+    b: 2
+};
+const currObj = {   //target
+    b: 5,
+    c: 19
+}
+const urObj = Object.assign(currObj, oldObj);
+console.log(urObj);
 // const programmer = {
 //     firstName: "Kamalika",
 //     calculateTax(){
