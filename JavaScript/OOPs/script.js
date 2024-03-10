@@ -98,6 +98,7 @@ const isIdentical = (obj1,obj2) =>{
 console.log(isIdentical(obj1,obj2));
 
 
+
 //{apna college}
 // const programmer = {
 //     firstName: "Kamalika",
