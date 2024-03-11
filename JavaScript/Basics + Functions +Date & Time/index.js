@@ -217,6 +217,13 @@
 //  //     lower index/boundary                                  upper index/boundary
 
 
+//destructuring
+const person = {name: "Kamalika", id: 155};
+const myArr = [3,2,1];
+const {name, id} = person;  //in this case the key names and the variable names must be same
+console.log(name);
+const [first,,third] = myArr;
+console.log(third);
 // //traversal in array
 
 // // console.log(names[1]);
