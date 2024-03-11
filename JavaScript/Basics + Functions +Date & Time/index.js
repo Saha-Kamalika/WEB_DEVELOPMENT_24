@@ -224,6 +224,12 @@ const {name, id} = person;  //in this case the key names and the variable names 
 console.log(name);
 const [first,,third] = myArr;
 console.log(third);
+
+//concatenating arrays using spread operator
+const arr1 = [1,2,3,4];
+const arr2 = [5,6,7,8];
+const newArray = [...arr1, ...arr2];
+console.log(newArray);
 // //traversal in array
 
 // // console.log(names[1]);
@@ -390,6 +396,11 @@ console.log(third);
 //     console.log(String.fromCharCode(ch));
 // }
 
+//Rest operators
+const sum = (...nums) =>{
+    return nums.reduce((acc, curr)=> (acc+=curr),0);
+}
+console.log(sum(1,2,3,4,5,6,7,8,9,10));
 //count no of vowels in a string
 let str = prompt("Enter a string: ");
 let count = 0;
