@@ -230,6 +230,27 @@ const arr1 = [1,2,3,4];
 const arr2 = [5,6,7,8];
 const newArray = [...arr1, ...arr2];
 console.log(newArray);
+
+//ES20 
+const myString = ["My name","is","Kamalika Saha"];
+const newStr = myString.map((curr)=>{
+    return curr;
+})
+console.log(newStr);
+
+const record = {
+    name: "Kamalika",
+    id: 155
+};
+const toArr = Object.entries(record);
+console.log(toArr);
+const toObj = Object.fromEntries(toArr);
+console.log(toObj);
+
+//nullish coalescing operator -> ?? (considers only null and undefined as falsy values)
+let myNum = 0;
+console.log(myNum ?? 11);
+
 // //traversal in array
 
 // // console.log(names[1]);
