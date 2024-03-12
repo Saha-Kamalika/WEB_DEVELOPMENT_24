@@ -251,6 +251,20 @@ console.log(toObj);
 let myNum = 0;
 console.log(myNum ?? 11);
 
+//optional chaining ?.
+const person1 = {
+    name: "Mr",
+    phone: 12345,
+    address :{
+        pin: 101,
+        district: "Howrah",
+        coordinates: {
+            latitude: 101,
+            longitude: 56
+        }
+    }
+};
+console.log(person1.address ?.coordinates ?.latitude || "not present");
 // //traversal in array
 
 // // console.log(names[1]);
