@@ -265,6 +265,24 @@ const person1 = {
     }
 };
 console.log(person1.address ?.coordinates ?.latitude || "not present");
+
+//||= &&= ??=
+let num1= 0;
+let num2= 10;
+num1 ||= num2; //assings right hand value if left value is falsy
+console.log(num1);
+num1 &&= num2; //assings right value if left value if truthy
+console.log(num1);
+
+//numeric separators
+let bigNum = 10_000_000;
+console.log(bigNum);
+
+//hasOwnProperty doesn't work for objects created using Object.create(null)
+let obj1 = Object.create(null);
+obj1.name = "Haha";
+//console.log(obj1.hasOwnProperty("name")); //error
+console.log(Object.hasOwn(obj1, "name"));
 // //traversal in array
 
 // // console.log(names[1]);
