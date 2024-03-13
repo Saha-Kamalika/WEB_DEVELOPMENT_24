@@ -1,126 +1,126 @@
-// // console.log("Hello World");
+// console.log("Hello World");
 
-// // var myName = 'kamalika saha';
-// // console.log(myName);
-
-
-// // Primitive Data types in javascript--> 6 types
-// // undefined..typeof()===undefined
-// // Boolean....boolean
-// // Number....number
-// // String...string
-// // BigInt...bigint
-// // Symbol...symbol
-// // null
-
-// //typeof operator
-// //console.log(typeof(myName));
-
-// //null vs undefined
-// // var iAmUseless = null;
-// // console.log(typeof(iAmUseless));   //object type
-
-// // var iAmStandby;
-// // console.log(typeof(iAmStandby));   //undefined type
-
-// //NaN --> not a number  ...."Rumi" - "Bishtu"
-// //property of global object...a variable in global scope...initial value is Not-A-Number
-
-// // var myNum =7980169813;
-// // var myName="kamalika";
-
-// // console.log(isNaN(myNum));
-// // console.log(isNaN(myName));
-
-// // NaN === NaN
-// // Number.NaN === NaN
-// // isNaN(NaN)
-// // isNaN(Number.NaN)
-// // Number.isNaN(NaN)
-// // console.log(NaN === NaN); //false
-// // console.log(Number.NaN === NaN); //false
-// // console.log(isNaN(NaN));  //true
-// // console.log(isNaN(Number.NaN));  //true
-// // console.log(Number.isNaN(NaN));   //true
-
-// //exponentiation operator
-// //console.log(9**2);
-
-// //swap 2 nos without 3rd var
-// // var a=10, b=20;
-// // a=a+b;
-// // b=a-b;
-// // a=a-b;
-// // console.log(a+" "+b);
-
-// //differnce between == and ===
-// // var num1= 5;
-// // var num2= '5';
-// // console.log(num1 == num2); //checks value
-// // console.log(num1 === num2); //checks datatype
-
-// // var year = 2100;
-// // if((year% 4==0 && year%100!=0) || (year%400==0)){
-// //     console.log(year+" is a leap year");
-// // }
-// // else console.log(year+" is not a leap year");
-
-// //there are 5 falsy value in js--> 0, null, "", undefined, NaN
-
-// // var score;
-// // if(score=0){
-// //     console.log("we lost");
-// // }
-// // else{
-// //     console.log("we won");
-// // }
-// // console.log(score);
+// var myName = 'kamalika saha';
+// console.log(myName);
 
 
+// Primitive Data types in javascript--> 6 types
+// undefined..typeof()===undefined
+// Boolean....boolean
+// Number....number
+// String...string
+// BigInt...bigint
+// Symbol...symbol
+// null
 
-// // let nums = prompt("Enter a number: ");
-// // if(nums%5 === 0){
-// //     console.log(nums, " is a multiple of 5");
-// // }
-// // else{
-// //     console.log(nums, " is not a multiple of 5");
-// // }
+//typeof operator
+//console.log(typeof(myName));
+
+//null vs undefined
+// var iAmUseless = null;
+// console.log(typeof(iAmUseless));   //object type
+
+// var iAmStandby;
+// console.log(typeof(iAmStandby));   //undefined type
+
+//NaN --> not a number  ...."Rumi" - "Bishtu"
+//property of global object...a variable in global scope...initial value is Not-A-Number
+
+// var myNum =7980169813;
+// var myName="kamalika";
+
+// console.log(isNaN(myNum));
+// console.log(isNaN(myName));
+
+// NaN === NaN
+// Number.NaN === NaN
+// isNaN(NaN)
+// isNaN(Number.NaN)
+// Number.isNaN(NaN)
+// console.log(NaN === NaN); //false
+// console.log(Number.NaN === NaN); //false
+// console.log(isNaN(NaN));  //true
+// console.log(isNaN(Number.NaN));  //true
+// console.log(Number.isNaN(NaN));   //true
+
+//exponentiation operator
+//console.log(9**2);
+
+//swap 2 nos without 3rd var
+// var a=10, b=20;
+// a=a+b;
+// b=a-b;
+// a=a-b;
+// console.log(a+" "+b);
+
+//differnce between == and ===
+// var num1= 5;
+// var num2= '5';
+// console.log(num1 == num2); //checks value
+// console.log(num1 === num2); //checks datatype
+
+// var year = 2100;
+// if((year% 4==0 && year%100!=0) || (year%400==0)){
+//     console.log(year+" is a leap year");
+// }
+// else console.log(year+" is not a leap year");
+
+//there are 5 falsy value in js--> 0, null, "", undefined, NaN
+
+// var score;
+// if(score=0){
+//     console.log("we lost");
+// }
+// else{
+//     console.log("we won");
+// }
+// console.log(score);
 
 
-// // for(let i=1;i<=5;i++){
-// //     var pattern ="";
-// //     for(let j=1;j<=i;j++){
-// //         pattern+=" *";
-// //     }console.log(pattern);
-// // }
-// //functions  -> reusable block of code
-// // function sum(){
-// //     var a=10, b=20;
-// //     console.log(a+b);
-// // }
-// // sum();
 
-// // function add(a, b){   //function parameters
-// //     //console.log(a+b);
-// //     return (a+b);
-// // }
-// // //sum(5, 10);   //function arguments
-
-// // //function expression -> create a function and put it into the variable
-
-// // var ans= add(10,40);
-// // //ans;
-// // console.log(ans);
-
-// // //anonymous function
-// // var res = function(a, b){
-// //     console.log(a+b);
-// // }
-// // //console.log(res(20, 20));
-// // res(20, 60);
+// let nums = prompt("Enter a number: ");
+// if(nums%5 === 0){
+//     console.log(nums, " is a multiple of 5");
+// }
+// else{
+//     console.log(nums, " is not a multiple of 5");
+// }
 
 
-// //IIFE (Immediately Invoked Function Expression)
+// for(let i=1;i<=5;i++){
+//     var pattern ="";
+//     for(let j=1;j<=i;j++){
+//         pattern+=" *";
+//     }console.log(pattern);
+// }
+//functions  -> reusable block of code
+// function sum(){
+//     var a=10, b=20;
+//     console.log(a+b);
+// }
+// sum();
+
+// function add(a, b){   //function parameters
+//     //console.log(a+b);
+//     return (a+b);
+// }
+// //sum(5, 10);   //function arguments
+
+// //function expression -> create a function and put it into the variable
+
+// var ans= add(10,40);
+// //ans;
+// console.log(ans);
+
+// //anonymous function
+// var res = function(a, b){
+//     console.log(a+b);
+// }
+// //console.log(res(20, 20));
+// res(20, 60);
+
+
+//IIFE (Immediately Invoked Function Expression)
 
 // (function(a,b){
 //     console.log(a+b);
@@ -157,64 +157,64 @@
 
 // ///////////////////////////////////////ECMAScript2015 / ES6 ///////////////////////////////////////
 
-// // let vs const vs var
+// let vs const vs var
 
-// // let myName="rumi";
-// // console.log(myName);
-// // myName="kamalika";
-// // console.log(myName);
+// let myName="rumi";
+// console.log(myName);
+// myName="kamalika";
+// console.log(myName);
 
-// // const myName="rumi";
-// // console.log(myName);
-// // myName="kamalika";
-// // console.log(myName);
+// const myName="rumi";
+// console.log(myName);
+// myName="kamalika";
+// console.log(myName);
 
-// // var => function scope
-// // let cinst => block scope
-// // function display(){
-// //     var firstName= "kamalika";
-// //     console.log(firstName);
-// //     if(true){
-// //         var lastName= "Saha";
-// //         console.log("inner "+ firstName);
-// //         console.log("inner "+ lastName);
-// //     }
-// //     console.log(firstName+" "+lastName);
-// // }
-// // function display(){
-// //     let firstName= "kamalika";  //same for const
-// //     console.log(firstName);
-// //     if(true){
-// //         let lastName= "Saha";
-// //         console.log("inner "+ lastName);
-// //         console.log("inner "+ firstName);
-// //     }
-// //     console.log(firstName+" "+lastName);
-// // }
-// // console.log(firstName);
-// // display();
+// var => function scope
+// let cinst => block scope
+// function display(){
+//     var firstName= "kamalika";
+//     console.log(firstName);
+//     if(true){
+//         var lastName= "Saha";
+//         console.log("inner "+ firstName);
+//         console.log("inner "+ lastName);
+//     }
+//     console.log(firstName+" "+lastName);
+// }
+// function display(){
+//     let firstName= "kamalika";  //same for const
+//     console.log(firstName);
+//     if(true){
+//         let lastName= "Saha";
+//         console.log("inner "+ lastName);
+//         console.log("inner "+ firstName);
+//     }
+//     console.log(firstName+" "+lastName);
+// }
+// console.log(firstName);
+// display();
 
-// //Template literals or template strings
+//Template literals or template strings
 
-// // for(var i=1; i<=10; i++){
-// //     let tableOf = 8;
-// //     console.log(`${tableOf} * ${i} = ${tableOf*i}`);
-// // }
+// for(var i=1; i<=10; i++){
+//     let tableOf = 8;
+//     console.log(`${tableOf} * ${i} = ${tableOf*i}`);
+// }
 
-// //default arguments
-// // function mult(a, b=1){
-// //     return a*b;
-// // }
-// // console.log(mult(2));
+//default arguments
+// function mult(a, b=1){
+//     return a*b;
+// }
+// console.log(mult(2));
 
-// //fat arrow function  ===> function must be mandatorily defined before calling it.
-// // const sum = () => `the sum is ${(a=10)+(b=5)}`
-// // console.log(sum());
+//fat arrow function  ===> function must be mandatorily defined before calling it.
+// const sum = () => `the sum is ${(a=10)+(b=5)}`
+// console.log(sum());
 
-// //arrays 
-// // var names = new Array //not mandatory
-// // var names =['kamalika', 'srijit', 'bishtu', 'rumi', true, 22, false, undefined]; //not strict, can store any datatypes
-//  //     lower index/boundary                                  upper index/boundary
+//arrays 
+// var names = new Array //not mandatory
+// var names =['kamalika', 'srijit', 'bishtu', 'rumi', true, 22, false, undefined]; //not strict, can store any datatypes
+ //     lower index/boundary                                  upper index/boundary
 
 
 //destructuring
@@ -283,6 +283,21 @@ let obj1 = Object.create(null);
 obj1.name = "Haha";
 //console.log(obj1.hasOwnProperty("name")); //error
 console.log(Object.hasOwn(obj1, "name"));
+
+//ECMAScript 2023
+let myArray = ['kamalika','saha','rumi','developer'];
+let reversed = myArray.toReversed();
+console.log(reversed);
+let sorted = myArray.toSorted();
+console.log(sorted);
+
+let spliced = myArray.toSpliced(2,1,"bera");
+console.log(spliced);
+let modify = myArray.with(2,"bera");
+console.log(modify);
+
+//////////////////////////////////////////////////////////////////////////////////
+
 // //traversal in array
 
 // // console.log(names[1]);

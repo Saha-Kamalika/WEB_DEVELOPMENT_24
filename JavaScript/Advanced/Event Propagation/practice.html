@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #outer{
+            margin-top: 5rem;
+            width: 25rem;
+            height: 15rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+
+            &:hover{
+                background-color: #451616;
+            }
+        }
+        #middle{
+            width: 20rem;
+            height: 10rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+
+            &:hover{
+                background-color: #18b3ab;
+            }
+        }
+        #inner{
+            width: 15rem;
+            height: 5rem;
+            background-color: #fff;
+            border: 5px solid black;
+
+            &:hover{
+                background-color: #8f1293;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="outer">
+            <div id="middle">
+                <div id="inner"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const callOuter = (e) =>{
+            console.table([{
+                Description: "I am the outer div",
+                Target: e.target,
+                CurrentTarget: e.currentTarget,
+            }])
+        }
+        const callMiddle = (e) =>{
+            console.table([{
+                Description: "I am the middle div",
+                Target: e.target,
+                CurrentTarget: e.currentTarget,
+            }])
+        }
+        const callInner = (e) =>{
+            console.table([{
+                Description: "I am the inner div",
+                Target: e.target,
+                CurrentTarget: e.currentTarget,
+            }])
+            e.stopPropagation();
+        }
+        //event bubbling
+        /*document.querySelector("#outer").addEventListener('click', callOuter);
+        document.querySelector("#middle").addEventListener('click', callMiddle);
+        document.querySelector("#inner").addEventListener('click', callInner); */
+        
+        //event capturing
+        document.querySelector("#outer").addEventListener('click', callOuter, true);
+        document.querySelector("#middle").addEventListener('click', callMiddle, true);
+        document.querySelector("#inner").addEventListener('click', callInner, true);
+    </script>
+</body>
+</html>
