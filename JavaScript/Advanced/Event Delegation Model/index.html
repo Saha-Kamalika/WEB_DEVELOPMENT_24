@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dekegation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin-top: 5rem;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            width: 50vw;
+        }
+        ul,li{
+            text-align: center;
+            color: beige;
+        }
+        #question{
+            font-size: 2rem;
+        }
+        li{
+            list-style-type: none;
+            border: 2px solid beige;
+            padding: 1rem;
+            margin-bottom: 0.2rem;
+
+            &:hover{
+                cursor: pointer;
+                background-color: beige;
+                color: black;
+                border: 2px solid black;
+            }
+        }
+        p{
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 2rem;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul id="question">What is your favourite language?
+        <li>🎉JavaScript🎉</li>
+        <li>📍React📍</li>
+        <li>🎊Next🎊</li>
+        <li>🎁HTML/CSS🎁</li>
+        </ul>
+        <p id="listValue"></p>
+    </section>
+    <script>
+        const getListDetails =(e) =>{
+            console.log(e.target);
+            document.getElementById("listValue").innerHTML = `Your favourite language is ${e.target.innerHTML}`;
+        }
+        document.querySelector("#question").addEventListener('click', getListDetails);
+    </script>
+</body>
+</html>
