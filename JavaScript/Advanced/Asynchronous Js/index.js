@@ -48,7 +48,24 @@
 //     })
 // }
 
+//Enrolment of a student
 
+const enrolStudent = (name) =>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            const isSuccess = Math.random() > 0.5;
+            if(isSuccess) resolve(`Enrolment successful for ${name}`);
+            else reject(`Enrolment failed for ${name}`);
+        },2000)
+    }).then((res)=>{
+        console.log(res);
+    }).catch((err)=>{
+        console.log(err);
+    }).finally(()=>{
+        console.log("Enrollment process over");
+    })
+}
+enrolStudent("Kamalika");
 
 ///Promise chaining
 const getPromise = () =>{

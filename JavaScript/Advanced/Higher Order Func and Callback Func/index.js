@@ -27,17 +27,29 @@
 // // Jis bhi function ko hum kisi or function ke under as an arguments passed 
 // // krte hai then usko hum CallBack fun bolte hai
 
-let a = "Hello guys. "; // global scope
+// let a = "Hello guys. "; // global scope
 
-const first= () => {
-  let b = " How are you?"
+// const first= () => {
+//   let b = " How are you?"
  
-    const second = () => {
-      let c = " Hii, I am fine thank you🙏";
-      console.log(a+b+c);
-    }
-    second();
-    // console.log(a+b+c); //I can't use C 
-}
+//     const second = () => {
+//       let c = " Hii, I am fine thank you🙏";
+//       console.log(a+b+c);
+//     }
+//     second();
+//     // console.log(a+b+c); //I can't use C 
+// }
 
-first();
+// first();
+
+
+const mathOperation = (a,b,operation)=>{
+  return operation(a,b);
+}
+const add = (a,b)=>{
+  return a+b;
+}
+const sub = (a,b)=>{
+  return a-b;
+}
+console.log(mathOperation(10,1,add));
