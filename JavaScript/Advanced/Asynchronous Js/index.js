@@ -91,6 +91,39 @@ const getData = (data)=>{
         }, 2000)
     })
 }
+
+//Promise methods
+const promise1 = new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve("First");
+        },1000)
+    })
+const promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("Second");
+        },2000)
+    })
+const promise3 = new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve("Third");
+        },1000)
+    })
+Promise.all([promise1,promise2,promise3]).then((res)=>{   //waits till the last promise is returned
+    console.log(res);                                     //if one of the promises are rejected, it is returned
+}).catch((err)=>{
+    console.error(err);
+})
+
+Promise.allSettled([promise1,promise2,promise3]).then((res)=>{   //returns the description of all the promises(fulfilled/rejected)
+    console.log(res);                                  
+}).catch((err)=>{
+    console.error(err);
+})
+Promise.race([promise1,promise2,promise3]).then((res)=>{   //returns the fastest resolved promise(fulfilled/rejected)
+    console.log(res);                                  
+}).catch((err)=>{
+    console.error(err);
+})
 // console.log("getting data1");
 // getData(1)
 //     .then((res)=>{
