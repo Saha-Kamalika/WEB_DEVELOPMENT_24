@@ -286,7 +286,7 @@ textarea:focus-visible {
 /***** Hero Section *****/
 
 main {
-  height: 84vh;
+  /* height: 90vh; */
   position: relative;
   background-color: #d9e9ff;
 
@@ -509,10 +509,12 @@ main .section-hero {
   display: flex;
   flex-direction: column;
   align-items: end;
+  text-align: right;
 }
 
 .section-why--choose .text-align--left .why-choose--div {
   align-items: start;
+  text-align: left;
 }
 
 .common-text--highlight {
@@ -672,6 +674,7 @@ footer {
 }
 
 .footer-container .content_1 img {
+  background: transparent;
   height: auto;
   width: 15rem;
 }
@@ -1195,10 +1198,14 @@ footer {
   } */
 
   .section-navbar .container {
+    display: flex;
     flex-direction: column;
     gap: 3.2rem;
   }
-
+  & .navbar-brand{
+    text-align: center;
+    /* margin-bottom: 2.4rem; */
+  }
   .section-why--choose {
     & img {
       width: 30%;
@@ -1208,11 +1215,8 @@ footer {
       gap: 1.4rem;
     }
 
-    & .text-align--right .why-choose--div {
-      align-items: flex-start;
-    }
-
-    & .choose-left-div {
+    & .choose-left--div .choose-div{
+      align-items: start;
       text-align: left;
     }
   }
