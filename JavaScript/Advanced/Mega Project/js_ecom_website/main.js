@@ -1,6 +1,6 @@
 import './style.css'
 import products from "./api/products.json";
-import { showProductContainer } from './public/images/homeProductCards';
+import { showProductContainer } from './homeProductCards';
 
 showProductContainer(products);
 

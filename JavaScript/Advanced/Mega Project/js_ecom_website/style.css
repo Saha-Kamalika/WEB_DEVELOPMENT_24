@@ -1037,6 +1037,9 @@ footer {
     width: 46rem;
     height: 46rem;
   }
+  footer {
+    padding: 0 1.6rem;
+  }
 }
 
 @media (width <= 1100px) {
@@ -1084,6 +1087,9 @@ footer {
   .section-contact .grid-two--cols {
     grid-template-columns: 2fr 1.5fr;
     gap: 3.2rem;
+  }
+  footer {
+    padding: 0 1.6rem;
   }
 }
 
