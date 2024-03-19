@@ -11,5 +11,4 @@ export const homeQuantityToggle = (event,id,stock) =>{
     }
     productQuantity.innerText = quantity;
     productQuantity.setAttribute("data-quantity", quantity);
- 
 }

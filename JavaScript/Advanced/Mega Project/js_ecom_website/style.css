@@ -887,7 +887,7 @@ footer {
   }
   p{
     margin-left: 0.5rem;
-    display: inline;
+    display: inline; 
   }
   .fa-cart-shopping {
     padding-right: 1rem;
@@ -1236,4 +1236,3 @@ footer {
     padding: 6.4rem 0rem 2.4rem 0rem;
   }
 }
-/***** End  media queries Secti
