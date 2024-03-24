@@ -180,8 +180,11 @@ textarea:focus-visible {
   font-family: "Urbanist", sans-serif;
   animation: toastAnimation 2s linear;
   -webkit-animation: toastAnimation 2s linear;
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),    0px 0px 0.5em 0px var(--glow-color);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 @keyframes toastAnimation {
@@ -308,6 +311,10 @@ main {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1696038172 svg {
@@ -363,6 +370,10 @@ main .section-hero {
   width: 100%;
   height: auto;
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
 }
 
 /***** End Hero Section *****/
@@ -386,7 +397,11 @@ main .section-hero {
     border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
     background-color: var(--borderColor);
     z-index: 1;
-  }
+    -webkit-border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+    -moz-border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+    -ms-border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+    -o-border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+}
 
   & p {
     text-transform: uppercase;
@@ -464,7 +479,7 @@ main .section-hero {
     padding: 3.2rem 0;
     background-color: #fefefe;
     border-radius: 0.5rem;
-  }
+}
 }
 
 .div-policy {
@@ -568,7 +583,7 @@ main .section-hero {
   -o-border-radius: 50%;
   z-index: -1;
   animation: circle 5s linear infinite;
-  -webkit-animation: circle 5s linear infinite alternate;
+  -webkit-animation: circle 5s linear infinite;
 }
 
 @keyframes circle {
@@ -1000,6 +1015,107 @@ footer {
     }
   }
 }
+.form-area{
+  h1,h2{
+    color: white;
+  }
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./public/images/form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  button,input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-style: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .grid-twoform--columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .registration, .login{
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: #4b4f56;
+  }
+  .form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./public/images/bgc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 3rem 2rem;
+    
+    & p{
+      width:  30ch;
+      text-align: center;
+      margin: 2rem 0 3rem 0;
+    }
+    & button{
+      background-color: #fff;
+      color: #000;
+
+      &:hover{
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+  .registration-form, .login-form{
+
+    h1,h2{
+      color: black;
+    }
+    width: 100%;
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & p{
+      margin: 1rem 0 .7rem 0;
+    }
+  }
+  .social-icons{
+    margin: 1rem 0 .6rem 0;
+    display: flex;
+    gap: 1.4rem;
+  }
+  .fa-solid{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: .1rem solid #ccc;
+    font-size: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+  
 
 /*****  Add to Cart page ends *****/
 
