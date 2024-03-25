@@ -1024,10 +1024,10 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./public/images/form.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(rgba(95, 109, 158, 0.9), rgba(88, 129, 155, 0.4));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   button,input[type="submit"]{
     border: .1rem solid #fff;
@@ -1048,7 +1048,6 @@ footer {
   .registration, .login{
     min-height: 30rem;
     min-width: 40vw;
-    background-color: #4b4f56;
   }
   .form-text{
     height: inherit;
@@ -1114,6 +1113,29 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+input{
+  width: 20rem;
+  margin: .7rem 0;
+  border: none;
+  background-color: #e8e8e8;
+  letter-spacing: .06rem;
+}
+input[type="submit"]{
+  margin-top: 1rem;
+  min-width: 10rem;
+  background-color: rgb(60, 22, 211);
+  color: white;
+}
+.login-section--display .login{
+  display: none;
+}
+/* .login-section--display .registration{
+  display: block;
+}
+.registration:not(.login-section--display){
+  display: none;
+} */
 }
   
 
