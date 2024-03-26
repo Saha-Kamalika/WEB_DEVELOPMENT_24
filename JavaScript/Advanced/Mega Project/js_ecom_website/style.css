@@ -1137,7 +1137,9 @@ input[type="submit"]{
   display: none;
 }
 
-
+  .onreg, .onlogin{
+    color: black;
+  }
 }
   
 
