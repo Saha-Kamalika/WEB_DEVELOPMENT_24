@@ -1127,15 +1127,17 @@ input[type="submit"]{
   background-color: rgb(60, 22, 211);
   color: white;
 }
+.registration:not(.login-section--display){
+  display: none;
+}
+.login-section--display .registration{
+  display: block;
+}
 .login-section--display .login{
   display: none;
 }
-/* .login-section--display .registration{
-  display: block;
-}
-.registration:not(.login-section--display){
-  display: none;
-} */
+
+
 }
   
 
