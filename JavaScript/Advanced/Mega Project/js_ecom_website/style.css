@@ -1024,7 +1024,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(rgba(95, 109, 158, 0.9), rgba(88, 129, 155, 0.4));
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.4)), url("./public/images/form\ bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1049,6 +1049,7 @@ footer {
     min-height: 30rem;
     min-width: 40vw;
   }
+
   .form-text{
     height: inherit;
     display: flex;
@@ -1077,6 +1078,19 @@ footer {
       }
     }
   }
+  .user-container{
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+  .login .form-text{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./public/images/login\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .registration-form, .login-form{
 
     h1,h2{
@@ -1089,6 +1103,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 1rem;
+    padding: 2rem;
 
     & p{
       margin: 1rem 0 .7rem 0;
@@ -1124,7 +1140,7 @@ input{
 input[type="submit"]{
   margin-top: 1rem;
   min-width: 10rem;
-  background-color: rgb(60, 22, 211);
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 .registration:not(.login-section--display){
@@ -1305,7 +1321,22 @@ input[type="submit"]{
   .section-contact .grid-two--cols {
     grid-template-columns: 1fr;
   }
-
+  .form-area .grid-twoform--columns{
+    grid-template-columns: 1fr;
+  }
+  .registration-header .container{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .registration, .login{
+    min-width: 90vw;
+  }
+  .form-text{
+    order: 1;
+  }
+  .registration, .login{
+    order: 0;
+  }
   .grid-three--cols {
     grid-template-columns: 1fr;
   }
