@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    height: auto;
+    letter-spacing: .1rem;
+}
+.tabs{
+    font-weight: 700;
+    display: flex;
+    gap: 3.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 3.2rem;
+}
+.menu-images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+.images img{
+    width: 300px;
+    height: 200px;
+    gap: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    &:hover{
+        cursor: pointer;
+        
+    }
+}
