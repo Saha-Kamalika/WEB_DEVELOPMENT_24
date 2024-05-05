@@ -6,7 +6,7 @@ tabs.addEventListener('click',(event)=>{
         filterSearch(event.target.dataset.category);
 })
 
-const filterSearch = (value) =>{
+const filterSearch = (value) =>{ 
     images.forEach((curr)=>{
         if(curr.dataset.category === value || value ==="All"){
             curr.style.display="block";
