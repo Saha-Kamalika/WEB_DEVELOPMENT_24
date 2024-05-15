@@ -11,3 +11,4 @@ const getFacts = async () => {
     msg.innerText = data[0].text;
 }
 btn.addEventListener("click", getFacts);
+ 
