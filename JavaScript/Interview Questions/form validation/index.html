@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <h3>REGISTRATION FORM</h3>
+            <div class="form-holder">
+                <div class="form-data">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="input-with-icon form-control" placeholder="Username" required autocomplete="off" id="username">
+                </div>
+                <div class="error" id="usernameError"></div>
+            </div>
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="text" class="input-with-icon form-control" placeholder="Phone Number" required autocomplete="off" id="phonenumber">
+                </div>
+                <div class="error" id="phoneError"></div>
+            </div>
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="input-with-icon form-control" placeholder="Email" required autocomplete="off" id="email">
+                </div>
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="input-with-icon form-control" placeholder="Password" required autocomplete="off" id="password">
+                </div>
+                <div class="error" id="passwordError"></div>
+            </div>
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="password" class="input-with-icon form-control" placeholder="Confirm Password" required autocomplete="off" id="confirmpass">
+                </div>
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+            <button class="formSubmit">Register Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
