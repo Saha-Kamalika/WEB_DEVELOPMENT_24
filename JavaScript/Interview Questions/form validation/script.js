@@ -11,7 +11,7 @@ document.querySelector(".formSubmit").addEventListener('click', (e) => {
     const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[\W_]).{8,}$/;
     const emailRegex = /^[A-Za-z0-9]+(?:[.%_+][A-Za-z0-9]+)*@[A-Za-z0-9]+\.[A-Za-z]{2,}$/;
     const phoneRegex = /^[6-9][\d]{9}$/;
-
+ 
     document.querySelectorAll(".error").forEach((curr)=>(curr.textContent="")); 
 
     let isValid=true;
