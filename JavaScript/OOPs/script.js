@@ -150,3 +150,20 @@ let student2 = new Student("Kam", "ami@gmail.com", 155);
 let teacher1 = new Teacher("Rumi", "rum@", 1202);
 teacher1.editData();
 teacher1.viewData();
+
+var Trainer={
+    name: "Trainer1",
+    subjects: ["Maths","Phy"],
+    isCheck: true
+};
+var properties="";
+for(p in Trainer){
+    properties+=p+" : ";
+}
+console.log(properties);
+delete Trainer.isCheck; 
+properties="";
+for(p in Trainer){
+    properties+=p+" : ";
+}
+console.log(properties);

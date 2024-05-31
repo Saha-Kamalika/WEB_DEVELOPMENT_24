@@ -127,6 +127,9 @@
 //     return a+b;
 // }(5,6));
 
+
+var add = new Function("a","b","return a+b");
+console.log(add(2,3));
 // const calculator = (num1,num2,operator) =>{
 //     let result;
 //     switch(operator){
