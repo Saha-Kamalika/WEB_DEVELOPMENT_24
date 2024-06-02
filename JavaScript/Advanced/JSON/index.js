@@ -11,4 +11,4 @@ typeof(jsonObj);
 
 var obj= JSON.parse(jsonObj);
 console.log(obj);
-typeof(obj);
+typeof(obj); 
