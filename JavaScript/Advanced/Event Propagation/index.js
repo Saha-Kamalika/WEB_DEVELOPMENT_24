@@ -6,3 +6,4 @@ The event propagation mode determines in which order the elements receive the ev
 
 //addEventListener( ,  , true/false) false by default-> event bubbling true-> event capturing
 
+ 
