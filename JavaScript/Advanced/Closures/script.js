@@ -1,5 +1,5 @@
-//closures -> the inner function can access the variables of the outer function even when the outer function isn't executing
-
+//closures -> the inner function can access the variables of the outer fucntion when the outer function is not executing
+ 
 const outerFunc = () =>{
     var outerVar = "Im outer";
     const innerFunc = () =>{

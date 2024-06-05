@@ -32,3 +32,6 @@ const remData = () =>{
 addbtn.addEventListener('click', addData);
 getbtn.addEventListener('click', getData);
 rembtn.addEventListener('click', remData);
+
+/*Local storage allows web applications to store data locally within a user's browser with no expiration data
+The data is not lost when the browser is closed */
