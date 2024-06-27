@@ -138,8 +138,27 @@ const pro = async () =>{
         
     )
 }
-
+ 
 forEach() is used to iterate over arrays or objects and perform some operation on the values
 
 == -> compares only the content of 2 variables (type coersion done)
 === ->compares both values and type
+
+DOM: Document Object Model 
+whenever the browser renders the html document, it creates an object based on the html document,usig this dom, we can manipulate or change the varioud elements of the html document
+
+const pro1 = new Promise((res,rej)=>{
+    let arr=[0,1,2];
+    if(arr.length>3){
+        rej("cannot operate");
+    }
+    else{
+        let sum=0;
+        for(let i of arr) sum+=i;
+        res("Sum is "+sum);
+    }
+}).then(res=>{
+    console.log(res);
+}).catch(err=>{
+    console.log(err);
+})
