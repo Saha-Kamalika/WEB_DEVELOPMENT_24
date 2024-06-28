@@ -162,3 +162,29 @@ const pro1 = new Promise((res,rej)=>{
 }).catch(err=>{
     console.log(err);
 })
+
+let obj = [
+    {name: "Kamalika",
+        marks: 30
+    },
+    {
+        name: "Srijit",
+        marks: 40
+    },
+    {
+        name: "Rumi",
+        marks: 60
+    }
+];
+
+const ans = obj.map((curr)=>{
+    if(curr.marks<60){
+        curr.marks+=20;
+    }
+    return curr;
+}).filter((curr)=>{
+    return curr.marks>60
+}).reduce((acc,curr)=>{
+    return acc=acc+curr.marks;
+},0)
+console.log(ans);
